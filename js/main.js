@@ -1,3 +1,3 @@
 function myFunction() {
-    document.getElementsByClassName("topnav")[0].classList.toggle("responsive");
+    document.getElementsByClassName("top-nav")[0].classList.toggle("responsive");
 }
