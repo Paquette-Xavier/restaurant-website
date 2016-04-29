@@ -155,6 +155,7 @@ section p {
   position: relative;
   font-family: "Montserrat", sans-serif;
   color: #8df232;
+  border: none;
 }
 
 li label {
@@ -267,4 +268,74 @@ p.logo {
     transform: translateX(4px);
   }
 
+}
+
+@media only screen and (min-width: 60em) {
+
+  html {
+    font-size: 120%;
+    line-height: 1.5;
+  }
+
+  nav li {
+    padding: 1.2em 2em;
+  }
+
+  p.logo {
+    font-size: 2.5rem;
+    transform: translate(-20px, -128px);
+  }
+
+  figure img {
+    padding: 3.9em 0 0 0;
+  }
+
+  figcaption .btn-banner {
+    transform: translate(365px, -120px);
+  }
+
+  .menu {
+    overflow: hidden;
+  }
+
+  .menu p {
+    float: left;
+    padding: .5em 15em;
+    transform: translate(-250px, 115px);
+  }
+
+  .menu ul {
+    float: right;
+    transform: translate(-30px, -100px);
+    width: 50%;
+  }
+
+  li label {
+    transform: translateX(-25px);
+  }
+
+  .staff p {
+    padding: .5em 4em;
+  }
+
+  .nutrition p {
+    padding: .5em 4em;
+  }
+
+  .nutrition img {
+    width: 60%;
+    transform: translate(190px, 0);
+  }
+
+  .medium-map {
+    display: none;
+  }
+
+  section h2 {
+    padding-left: 2.6em;
+  }
+
+  .contact-h2 {
+    padding-left: 1em;
+  }
 }
