@@ -16,14 +16,14 @@
         <li><a href="#staff">The Staff</a></li>
         <li><a href="#nutrition">Nutrition</a></li>
         <li><a href="#contact">Let's Talk!</a></li>
-        <li class="nav-icon">
-          <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
-        </li>
       </ul>
+      <span class="nav-icon">
+        <a href="javascript:void(0);" onclick="function()">&#9776;</a>
+      </span>
     </nav>
 
     <figure>
-      <img class="img-flex banner" src="" alt="banner">
+      <img class="img-flex banner" src="images/placeholder-16by9.svg" alt="banner">
       <figcaption>
         <a class="btn-banner" href="#menu">See our menu!</a>
       </figcaption>
@@ -58,6 +58,11 @@
     </section>
   </main>
 
-  <script src="js/main.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+  <script>
+  $("ul.topnav").click(function () {
+
+    $("ul.topnav").toggle();
+  }
 </body>
 </html>
