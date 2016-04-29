@@ -27,10 +27,24 @@ header {
   width: 100%;
 }
 
+h1 {
+  font-family: "Boogaloo", cursive;
+  text-align: center;
+  margin: 0;
+  color: #48944a;
+  background-color: #ccc;
+  font-size: 3rem;
+  padding: .5em;
+}
+
 a,
 h2 {
   font-family: "Montserrat", sans-serif;
   color: #a9e176;
+}
+
+h2 {
+  margin-top: 0;
 }
 
 nav {
@@ -64,16 +78,20 @@ ul li a {
   text-decoration: none;
   list-style-type: none;
   text-align: center;
-  transition: 0.3s;
-	padding-right: .1em;
+  padding-right: .1em;
 }
 
 li:not(:last-child) {
-	border-right: 1px solid #777;
+  border-right: 1px solid #777;
 }
 
 ul li a:hover {
   background-color: #444;
+}
+
+ul li a:active {
+  background-color: #ccc;
+  color: #333;
 }
 
 figure {
@@ -116,8 +134,8 @@ section h2 {
 
 section p {
   color: #333;
-	padding: .3em .7em;
-	font-family: "Montserrat", sans-serif;
+  padding: .3em .7em;
+  font-family: "Montserrat", sans-serif;
 }
 
 .menu {
@@ -126,50 +144,50 @@ section p {
 }
 
 .menu ul {
-	padding: 0;
+  padding: 0;
 }
 
 .menu li {
-	list-style-type: none;
-	overflow: hidden;
-	padding: .5em 1.5em;
-	position: relative;
-	font-family: "Montserrat", sans-serif;
-	color: #8df232;
+  list-style-type: none;
+  overflow: hidden;
+  padding: .5em 1.5em;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  color: #8df232;
 }
 
 li label {
-	float: left;
-	padding-right: .8em;
-	background-color: #999;
+  float: left;
+  padding-right: .8em;
+  background-color: #999;
 }
 
 li span {
-	float: right;
-	padding-left: .8em;
-	background-color: #999;
+  float: right;
+  padding-left: .8em;
+  background-color: #999;
 }
 
 .dots {
-	border-top: dotted 2px #ccc;
-	position: absolute;
-	top: 1em;
-	right: 2em;
-	width: 65%;
-	z-index: -1;
+  border-top: dotted 2px #ccc;
+  position: absolute;
+  top: 1em;
+  right: 2em;
+  width: 65%;
+  z-index: -1;
 }
 
 .nutrition img {
-	width: 100%;
-	display: block;
+  width: 100%;
+  display: block;
 }
 
 footer {
-	font-family: "Montserrat", sans-serif;
-	padding: .5em;
-	background-color: #333;
-	text-align: center;
-	color: #a9e176;
+  font-family: "Montserrat", sans-serif;
+  padding: .5em;
+  background-color: #333;
+  text-align: center;
+  color: #a9e176;
 }
 
 .contact {
@@ -177,5 +195,5 @@ footer {
 }
 
 .contact p {
-	color: #fff;
+  color: #fff;
 }
