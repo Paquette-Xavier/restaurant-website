@@ -19,27 +19,26 @@ html {
 
 body {
   margin: 0;
+  width: 100%;
 }
 
 header {
   margin: 0;
-}
-
-.show-nav {
-  display: block;
+  width: 100%;
 }
 
 a,
 h2 {
   font-family: "Montserrat", sans-serif;
-	color: #a9e176;
+  color: #a9e176;
 }
 
 nav {
   display: inline-block;
   width: 100%;
-	position: fixed;
-	top: 0;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
 }
 
 nav ul {
@@ -49,17 +48,15 @@ nav ul {
   display: inline-block;
   width: 100%;
   overflow: hidden;
-	margin: 0;
+  margin: 0;
 }
 
 nav li {
-  width: 100%;
   margin: 0;
-  padding: .5em .2em;
+  padding: .7em .3em;
   overflow: hidden;
   float: left;
-  width: 25%;
-	text-align: center;
+  text-align: left;
 }
 
 ul li a {
@@ -67,8 +64,12 @@ ul li a {
   text-decoration: none;
   list-style-type: none;
   text-align: center;
-  font-size: 1.2rem;
   transition: 0.3s;
+	padding-right: .1em;
+}
+
+li:not(:last-child) {
+	border-right: 1px solid #777;
 }
 
 ul li a:hover {
@@ -86,7 +87,7 @@ figure img {
 }
 
 figcaption .btn-banner {
-	color: #fff;
+  color: #fff;
   background-color: #333;
   display: inline-block;
   padding: 0.4em 0.75em 0.3em;
@@ -95,17 +96,57 @@ figcaption .btn-banner {
   padding: 0.4em;
   text-decoration: none;
   border: 1px solid #8df232;
-  transform: translate(320px, -80px);
-  box-shadow: 3px 3px 3px #888888;
+  transform: translate(170px, -60px);
+  box-shadow: 3px 3px 3px #888;
+  z-index: 900;
 }
 
 .btn-banner:hover {
-	color: #333;
-	background-color: #a9e176;
-	border-width: 1px;
-	border-color: #333;
+  color: #333;
+  background-color: #a9e176;
+  border-width: 1px;
+  border-color: #333;
 }
 
 section h2 {
-	
+  padding: .5em .8em;
+  border-radius: .5px;
+  background-color: #333;
+}
+
+section p {
+  color: #333;
+	padding: .3em .5em;
+	font-family: "Montserrat", sans-serif;
+}
+
+.menu {
+  margin: 0;
+  padding: 0;
+}
+
+.staff {
+
+}
+
+.nutrition {
+
+}
+
+.nutrition img {
+	width: 100%;
+	display: block;
+}
+
+footer {
+	font-family: "Montserrat", sans-serif;
+	padding: .5em;
+	background-color: #333;
+	text-align: center;
+	color: #a9e176;
+}
+
+.contact {
+  text-align: center;
+  color: #fff;
 }
