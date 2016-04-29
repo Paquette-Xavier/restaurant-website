@@ -25,16 +25,6 @@ header {
   margin: 0;
 }
 
-#nav-toggle {
-  position: absolute;
-  width: 2em;
-  height: 2em;
-  display: block;
-  transform: translate(280px, -56px);
-  z-index: 1000;
-  color: #8df232;
-}
-
 .show-nav {
   display: block;
 }
@@ -42,20 +32,24 @@ header {
 a,
 h2 {
   font-family: "Montserrat", sans-serif;
+	color: #a9e176;
 }
 
 nav {
   display: inline-block;
   width: 100%;
+	position: fixed;
+	top: 0;
 }
 
 nav ul {
-  background-color: #222;
+  background-color: #333;
   list-style-type: none;
   padding: 0;
   display: inline-block;
   width: 100%;
   overflow: hidden;
+	margin: 0;
 }
 
 nav li {
@@ -65,10 +59,11 @@ nav li {
   overflow: hidden;
   float: left;
   width: 25%;
+	text-align: center;
 }
 
 ul li a {
-  color: #8df232;
+  color: #a9e176;
   text-decoration: none;
   list-style-type: none;
   text-align: center;
@@ -87,5 +82,30 @@ figure {
 figure img {
   width: 100%;
   margin: 0;
-  padding: 0;
+  padding: 2.5em 0 0 0;
+}
+
+figcaption .btn-banner {
+	color: #fff;
+  background-color: #333;
+  display: inline-block;
+  padding: 0.4em 0.75em 0.3em;
+  border-width: 3px;
+  border-radius: 8px;
+  padding: 0.4em;
+  text-decoration: none;
+  border: 1px solid #8df232;
+  transform: translate(320px, -80px);
+  box-shadow: 3px 3px 3px #888888;
+}
+
+.btn-banner:hover {
+	color: #333;
+	background-color: #a9e176;
+	border-width: 1px;
+	border-color: #333;
+}
+
+section h2 {
+	
 }
