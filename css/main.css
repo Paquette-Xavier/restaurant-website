@@ -25,6 +25,20 @@ header {
   margin: 0;
 }
 
+#nav-toggle {
+  position: absolute;
+  width: 2em;
+  height: 2em;
+  display: block;
+  transform: translate(280px, -56px);
+  z-index: 1000;
+  color: #8df232;
+}
+
+.show-nav {
+  display: block;
+}
+
 a,
 h2 {
   font-family: "Montserrat", sans-serif;
@@ -47,7 +61,7 @@ nav ul {
 nav li {
   width: 100%;
   margin: 0;
-  padding: 0;
+  padding: .5em .2em;
   overflow: hidden;
   float: left;
   width: 25%;
@@ -66,10 +80,6 @@ ul li a:hover {
   background-color: #444;
 }
 
-ul li.nav-icon {
-  display: none;
-}
-
 figure {
   margin: 0;
 }
@@ -78,37 +88,4 @@ figure img {
   width: 100%;
   margin: 0;
   padding: 0;
-}
-
-@media screen and (max-width: 38em) {
-
-  ul li:not(:first-child) {
-    display: none;
-  }
-
-  ul li.nav-icon {
-    float: right;
-    display: inline-block;
-  }
-
-  ul .topnav.responsive {
-    position: relative;
-  }
-
-  ul .topnav.responsive li.nav-icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-
-  ul .topnav.responsive li {
-    float: none;
-    display: inline;
-  }
-
-  ul .topnav.responsive li a {
-    display: block;
-    text-align: left;
-  }
-
 }
