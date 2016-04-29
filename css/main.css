@@ -338,4 +338,58 @@ p.logo {
   .contact-h2 {
     padding-left: 1em;
   }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  html {
+    font-size: 130%;
+    line-height: 1.5;
+  }
+
+  body {
+    width: 80%;
+    transform: translateX(140px);
+  }
+
+  nav li {
+    padding: 1.5em 2em;
+    font-size: 1.3rem;
+  }
+
+  p.logo {
+    font-size: 3rem;
+    transform: translate(-40px, -180px);
+  }
+
+  figure img {
+    padding: 5.8em 0 0 0;
+  }
+
+  figcaption .btn-banner {
+    transform: translate(450px, -140px);
+  }
+
+  .menu p {
+    padding: .5em 18em;
+    transform: translate(-300px, 115px);
+  }
+
+  .menu ul {
+  width: 40%;
+  }
+
+  .staff p {
+    padding: .6em 6em;
+  }
+
+  .nutrition p {
+    padding: .6em 6em;
+  }
+
+  .nutrition img {
+    transform: translate(235px, 0);
+  }
+
 }
